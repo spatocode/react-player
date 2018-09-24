@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Settings = () =>
+const NowPlaying = () =>
     <div>
 
     </div>
 
-export default Settings
+export default NowPlaying
