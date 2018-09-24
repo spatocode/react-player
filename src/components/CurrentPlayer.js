@@ -1,4 +1,5 @@
 import React from 'react'
+import '../stylesheets/CurrentPlayer.scss'
 
 const CurrentPlayer = () =>
     <div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../stylesheets/Title.scss'
 
 const Title = () =>
     <div>

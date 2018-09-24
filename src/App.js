@@ -3,7 +3,7 @@ import Title from './components/Title'
 import Menu from './components/Menu'
 import PlayerList from './components/PlayerList'
 import CurrentPlayer from './components/CurrentPlayer'
-import './App.css';
+import './stylesheets/App.css';
 
 class App extends Component {
   render() {
