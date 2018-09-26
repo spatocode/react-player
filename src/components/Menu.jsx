@@ -1,5 +1,4 @@
 import React from 'react'
-import AddMusic from './AddMusic'
 import '../stylesheets/Menu.scss'
 
 const Menu = () => {

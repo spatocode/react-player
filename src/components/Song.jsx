@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import StarRating from './StarRating'
 
-const Song = ({ song, rating, onRate, onRemove }) =>
+const Song = ({ name, rating, onRate, onRemove }) =>
     <section className="song">
-        <p>{song}</p>
+        <p>{name}</p>
         <button className="remove-button" onClick={onRemove}>X</button>
         <div className="rating-wrapper">
             <StarRating starsSelected={rating} onRate={onRate} />
@@ -12,7 +12,7 @@ const Song = ({ song, rating, onRate, onRemove }) =>
     </section>
 
 Song.propTypes = {
-    song: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
     rating: PropTypes.number,
     onRemove: PropTypes.func,
     onRate: PropTypes.func
