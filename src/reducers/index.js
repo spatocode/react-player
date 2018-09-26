@@ -5,6 +5,7 @@ export const song = (state = {}, action) => {
         case C.ADD_SONG:
             return {
                 id: action.id,
+                name: action.name,
                 song: action.song,
                 rating: 0
             }

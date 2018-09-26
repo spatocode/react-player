@@ -3,7 +3,7 @@ import '../stylesheets/Title.scss'
 
 const Title = () =>
     <div className="title">
-        <h1>React Player</h1>
+        <h2>React Player</h2>
     </div>
 
 export default Title

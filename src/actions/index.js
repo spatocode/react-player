@@ -1,9 +1,10 @@
 import { v4 } from 'uuid'
 import C from '../constants'
 
-export const addSong = (song) =>
+export const addSong = (song, name) =>
     ({
         type: C.ADD_SONG,
+        name,
         song,
         id: v4()
     })
@@ -14,7 +15,7 @@ export const removeSong = id =>
         id
     })
 
-export const rateColor = (id, rating) =>
+export const rateSong = (id, rating) =>
     ({
         type: C.RATE_SONG,
         id,
