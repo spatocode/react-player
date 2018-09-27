@@ -7,11 +7,10 @@ const AddSong = ({onNewSong}) => {
     }
 
     return(
-        <div>
-            <i className="fa fa-plus" title="Add song">
-                <input onChange={addSong} style={{display: "block"}} type="file" 
-                        multiple accept="audio/mp3" ref={input => music = input}/>
-            </i>
+        <div className="add-song">
+            <input class="visually-hidden" id="song-selector" onChange={addSong} style={{display: "block"}} type="file" 
+                    multiple accept="audio/mp3" ref={input => music = input}/>
+            <label for="song-selector">+</label>
         </div>
     )
 }
