@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const AddSong = ({onNewSong}) => {
     let music;
@@ -13,6 +14,10 @@ const AddSong = ({onNewSong}) => {
             <label for="song-selector">+</label>
         </div>
     )
+}
+
+AddSong.propTypes = {
+    onNewSong: PropTypes.func
 }
 
 export default AddSong
