@@ -1,1 +1,5 @@
 /build
+
+registerServiceWorker.js
+
+/src/App.test.js
