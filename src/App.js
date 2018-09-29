@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Title from './components/Title'
 import Menu from './components/Menu'
-import { NewSong } from './containers'
-import { Songs } from './containers'
+import { NewSong, Songs } from './containers'
 import CurrentPlayer from './components/CurrentPlayer'
 import './stylesheets/App.css';
 

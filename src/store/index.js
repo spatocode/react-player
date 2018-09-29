@@ -1,6 +1,7 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux'
+import { createStore, combineReducers } from 'redux'
 import { songs } from '../reducers'
 
-export const store = (createStore(combineReducers({
-    songs
-})))
+export const store = (
+    createStore(
+        combineReducers({ songs })
+    ))
