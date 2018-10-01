@@ -9,9 +9,9 @@ const AddSong = ({onNewSong}) => {
 
     return(
         <div className="add-song">
-            <input class="visually-hidden" id="song-selector" onChange={addSong} style={{display: "block"}} type="file" 
+            <input className="visually-hidden" id="song-selector" onChange={addSong} style={{display: "block"}} type="file" 
                     multiple accept="audio/mp3" ref={input => music = input}/>
-            <label for="song-selector">+</label>
+            <label htmlFor="song-selector">+</label>
         </div>
     )
 }

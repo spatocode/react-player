@@ -3,7 +3,10 @@ import '../stylesheets/CurrentPlayer.scss'
 
 const CurrentPlayer = () =>
     <div className="current-player">
-        <div className="timer"></div>
+        <div className="timer">
+            <div></div>
+            <span aria-label="timer">00:00</span>
+        </div>
         <div className="controls">
             <i className="material-icons" title="Repeat">repeat</i>
             <i className="fa fa-square" title="Stop"></i>
