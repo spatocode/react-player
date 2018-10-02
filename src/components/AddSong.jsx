@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 const AddSong = ({onNewSong}) => {
     let music;
-    const addSong = (e) => {
-        onNewSong(e.currentTarget.files, e.currentTarget.files[0].name)
+    const addSong = () => {
+        onNewSong(music.files, music.files[0].name)
     }
 
     return(

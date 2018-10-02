@@ -4,6 +4,7 @@ import '../stylesheets/CurrentPlayer.scss'
 const CurrentPlayer = () =>
     <div className="current-player">
         <div className="timer">
+            <p></p>
             <div></div>
             <span aria-label="timer">00:00</span>
         </div>

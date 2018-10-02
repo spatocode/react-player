@@ -1,5 +1,5 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-import { songs } from '../reducers'
+import { createStore, applyMiddleware } from 'redux'
+import { reducers } from '../reducers'
 
 const logger = store => next => action => {
     let result
@@ -19,7 +19,7 @@ const saver = store => next => action => {
 
 const storeFactory = () =>
     applyMiddleware(logger, saver) (createStore) (
-        combineReducers( {songs} ),
+        reducers,
         (localStorage['redux-store']) ?
             JSON.parse(localStorage['redux-store']) :
             {}

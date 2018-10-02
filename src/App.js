@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Title from './components/Title'
 import Menu from './components/Menu'
-import { NewSong, Songs } from './containers'
-import CurrentPlayer from './components/CurrentPlayer'
+import { NewSong, Songs, PlayerControl } from './containers'
 import './stylesheets/App.css';
 
 class App extends Component {
@@ -13,7 +12,7 @@ class App extends Component {
         <Menu />
         <NewSong />
         <Songs />
-        <CurrentPlayer />
+        <PlayerControl />
       </div>
     );
   }

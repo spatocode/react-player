@@ -1,8 +1,9 @@
 import { connect } from 'react-redux'
 import AddSongs from './components/AddSong'
 import SongList from './components/SongList'
+import CurrentPlayer from './components/CurrentPlayer'
 import App from './App'
-import { addSong, removeSong, rateSong } from './actions'
+import { addSong, removeSong, rateSong, playSong } from './actions'
 
 export const NewSong = connect(
     null,
@@ -18,12 +19,8 @@ export const Songs = connect(
         }),
     dispatch =>
         ({
-            onRemove(id) {
-                dispatch(removeSong(id))
-            },
-            onRate(id, rating) {
-                dispatch(rateSong(id, rating))
-            }
+            onRemove: (id) => { dispatch(removeSong(id)) },
+            onRate: (id, rating) => { dispatch(rateSong(id, rating)) }
         })
 )(SongList)
 
@@ -34,3 +31,8 @@ export const ReactPlayer = connect(
         }),
         null
 )(App)
+
+export const PlayerControl = connect(
+    null,
+        null
+)(CurrentPlayer)

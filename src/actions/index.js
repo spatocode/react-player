@@ -15,6 +15,13 @@ export const removeSong = id =>
         id
     })
 
+export const playSong = (src) =>
+    ({
+        type: C.PLAY_SONG,
+        play: true,
+        src
+    })
+
 export const rateSong = (id, rating) =>
     ({
         type: C.RATE_SONG,
