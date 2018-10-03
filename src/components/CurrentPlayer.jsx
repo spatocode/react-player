@@ -1,17 +1,20 @@
 import React from 'react'
 import '../stylesheets/CurrentPlayer.scss'
 
-const CurrentPlayer = ({songs}) => {
+const CurrentPlayer = ({name, src}) => {
     let audioPlayer
 
     const play = () => {
-        console.log(songs)
+        (audioPlayer.paused) ?
+        audioPlayer.play() :
+        audioPlayer.pause()
     }
+
     return(
         <div className="current-player">
-            <audio ref={audio => audioPlayer = audio}></audio>
+            <audio src={src} ref={audio => audioPlayer = audio}></audio>
             <div className="timer">
-                <p></p>
+                <p>{name}</p>
                 <div></div>
                 <span aria-label="timer">00:00</span>
             </div>

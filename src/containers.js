@@ -36,7 +36,8 @@ export const ReactPlayer = connect(
 export const PlayerControl = connect(
     state =>
         ({
-            
+            name: state.playState.name,
+            src: state.playState.src
         }),
         null
 )(CurrentPlayer)

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const AddSong = ({onNewSong}) => {
     let music;
     const addSong = () => {
-        onNewSong(URL.createObjectURL(music.files[0].toString()), music.files[0].name)
+        onNewSong(URL.createObjectURL(music.files[0]), music.files[0].name)
     }
 
     return(

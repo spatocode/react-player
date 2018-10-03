@@ -5,7 +5,7 @@ export const playState = (state = {}, action) => {
         case C.PLAY_SONG:
             return{
                 name: action.name,
-                file: action.file
+                src: action.src
             }
         default :
             return state
