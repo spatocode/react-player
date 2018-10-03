@@ -11,7 +11,7 @@ const  SongList = ({ songs=[], onRate=f=>f, onRemove=f=>f, getSong=f=>f }) =>
                 <Song key={song.id}
                     {...song}
                     onRate={(rating) => onRate(song.id, rating)}
-                    onRemove={() => onRemove(song.id)} />
+                    onRemove={() => onRemove(song.id)} getSong={() => getSong(song.name, song.song)} />
             )
         }
     </div>

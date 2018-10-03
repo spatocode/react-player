@@ -15,11 +15,11 @@ export const removeSong = id =>
         id
     })
 
-export const playSong = (src) =>
+export const playState = (name, file) =>
     ({
         type: C.PLAY_SONG,
-        play: true,
-        src
+        name,
+        file
     })
 
 export const rateSong = (id, rating) =>

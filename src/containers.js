@@ -3,7 +3,7 @@ import AddSongs from './components/AddSong'
 import SongList from './components/SongList'
 import CurrentPlayer from './components/CurrentPlayer'
 import App from './App'
-import { addSong, removeSong, rateSong, playSong } from './actions'
+import { addSong, removeSong, rateSong, playState } from './actions'
 
 export const NewSong = connect(
     null,
@@ -20,7 +20,8 @@ export const Songs = connect(
     dispatch =>
         ({
             onRemove: (id) => { dispatch(removeSong(id)) },
-            onRate: (id, rating) => { dispatch(rateSong(id, rating)) }
+            onRate: (id, rating) => { dispatch(rateSong(id, rating)) },
+            getSong: (name, file) => { dispatch(playState(name, file)) }
         })
 )(SongList)
 
@@ -33,6 +34,9 @@ export const ReactPlayer = connect(
 )(App)
 
 export const PlayerControl = connect(
-    null,
+    state =>
+        ({
+            
+        }),
         null
 )(CurrentPlayer)
