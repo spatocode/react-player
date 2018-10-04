@@ -18,11 +18,6 @@ const saver = store => next => action => {
 }
 
 const storeFactory = () =>
-    applyMiddleware(logger, saver) (createStore) (
-        reducers,
-        (localStorage['redux-store']) ?
-            JSON.parse(localStorage['redux-store']) :
-            {}
-    )
+    applyMiddleware(logger, saver) (createStore) (reducers)
 
 export default storeFactory
