@@ -1,9 +1,9 @@
 import { connect } from 'react-redux'
-import AddSongs from './components/AddSong'
-import SongList from './components/SongList'
-import CurrentPlayer from './components/CurrentPlayer'
-import App from './App'
-import { addSong, removeSong, rateSong, playState } from './actions'
+import AddSongs from './UI/AddSong'
+import SongList from './UI/SongList'
+import CurrentPlayer from './UI/CurrentPlayer'
+import App from '../App'
+import { addSong, removeSong, rateSong, playState } from '../actions'
 
 export const NewSong = connect(
     null,
@@ -39,5 +39,5 @@ export const PlayerControl = connect(
             name: state.playState.name,
             src: state.playState.src
         }),
-        null
+    null
 )(CurrentPlayer)

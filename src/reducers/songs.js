@@ -1,4 +1,4 @@
-import C from '../constants'
+import C from '../actions/constants'
 
 export const song = (state = {}, action) => {
     switch (action.type) {

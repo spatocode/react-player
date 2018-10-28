@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Title from './components/Title'
-import Menu from './components/Menu'
-import { NewSong, Songs, PlayerControl } from './containers'
+import Title from './components/UI/Title'
+import Menu from './components/UI/Menu'
+import { NewSong, Songs, PlayerControl } from './components/containers'
 import './stylesheets/App.css';
 
 class App extends Component {

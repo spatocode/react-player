@@ -1,5 +1,5 @@
 import React from 'react'
-import '../stylesheets/NowPlaying.scss'
+import '../../stylesheets/NowPlaying.scss'
 
 const NowPlaying = () =>
     <div>

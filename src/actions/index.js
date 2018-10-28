@@ -1,5 +1,5 @@
 import { v4 } from 'uuid'
-import C from '../constants'
+import C from './constants'
 
 export const addSong = (song, name) =>
     ({
