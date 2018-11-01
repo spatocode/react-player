@@ -12,6 +12,8 @@ class CurrentPlayer extends Component {
         this.playButton = React.createRef()
         this.stopButton = React.createRef()
         this.timer = React.createRef()
+        this.timerBar = React.createRef()
+        this.timerBarWrapper = React.createRef()
     }
 
     play = (e) => {
@@ -61,7 +63,9 @@ class CurrentPlayer extends Component {
         }
 
         var audioTime = hourValue + ':' + minuteValue + ':' + secondValue
+        var barLength = this.timerBarWrapper.current.clientWidth * (this.audioPlayer.current.currentTime/this.audioPlayer.current.duration);
         this.timer.current.innerHTML = audioTime
+        this.timerBar.current.style.width = barLength + 'px'
     }
 
     render(){
@@ -72,7 +76,9 @@ class CurrentPlayer extends Component {
                 <audio src={url} ref={this.audioPlayer} onTimeUpdate={this.timeUpdate}></audio>
                 <div className="timer">
                     <p>{name}</p>
-                    <div></div>
+                    <div ref={this.timerBarWrapper} className="time-lenght-wrapper">
+                        <div ref={this.timerBar} className="time-lenght" style={{width: "0"}}></div>
+                    </div>
                     <span aria-label="timer" ref={this.timer}>00:00</span>
                 </div>
                 <Controls ref={this.playButton} play={this.play} />
