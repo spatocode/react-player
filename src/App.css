@@ -1,0 +1,156 @@
+/**.App {
+  text-align: center;
+}**/
+
+/**Title**/
+.title{
+  background-image: linear-gradient(to right, rgb(108, 108, 206), rgb(119, 14, 96));
+  color: rgb(212, 247, 235);
+  padding: 1px;
+  text-align: center;
+}
+
+/**Menu**/
+.menu{
+  height: 100%;
+  width: 20px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color:rgb(209, 164, 198);
+  padding: 15px;
+  padding-top: 20px;
+}
+.menu i{
+  margin: 25px 8px 15px 0px;
+  color: rgb(55, 16, 146);
+  cursor: pointer;
+}
+.menu i:hover{
+  color: grey;
+}
+.current-player{
+  text-align: center;
+  padding: 20px;
+  opacity: 0.8;
+  width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -200px;
+  transition: 0.7s all;
+}
+.current-player:hover{
+  opacity: 1;
+}
+.controls{
+  background-color: rgb(206, 128, 108);
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 5px black;
+}
+.controls i{
+  margin: 5px 35px 5px 5px;
+  color: rgb(9, 5, 51);
+  cursor: pointer;
+  font-size: 25px;
+}
+.controls i:nth-of-type(2){
+  font-size: 22px;
+}
+.controls i:hover{
+  color: rgb(44, 23, 240);
+}
+.timer{
+  width: 400px;
+  font-family: monospace;
+}
+.time-lenght-wrapper {
+  background-color: rgb(97, 94, 94);
+  height: 8px;
+}
+.time-lenght{
+  background-color: rgb(6, 5, 66);
+  height: 8px;
+}
+.no-song{
+  text-align: center;
+  margin: 5%;
+}
+.song-list{
+  margin-left: 60px;
+  margin-right: 10px;
+}
+.star {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 2px;
+  float: left;
+  background-color: rgb(160, 158, 158);
+  clip-path: polygon(
+      50% 0%, 
+      63% 38%,
+      100% 38%, 
+      69% 59%, 
+      82% 100%,
+      50% 75%, 
+      18% 100%, 
+      31% 59%,
+      0% 38%, 
+      37% 38%
+  );
+}
+.star.selected {
+  background-color: rgb(255, 174, 0);
+  }
+.song{
+  background-color: rgb(226, 250, 231);
+  border-bottom: 1px solid rgb(207, 207, 207);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.song:hover{
+  background-color: rgb(204, 203, 203);
+  transition: 0.7s
+}
+.remove-button{
+  float: right;
+  position: relative;
+  bottom: 40px;
+  cursor: pointer;
+}
+.song-list{
+  display:flex;
+  flex-direction: column;
+}
+.visually-hidden{
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px)
+}
+input.visually-hidden:focus + label {
+  outline: thin dotted;
+}
+.add-song{
+  float: right;
+  background-color: brown;
+  color: white;
+  border-radius: 10%;
+  margin: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+.add-song label{
+  font-weight: bolder;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 15px;
+}
