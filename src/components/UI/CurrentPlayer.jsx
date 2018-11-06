@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Controls from './Controls'
-import '../../stylesheets/CurrentPlayer.scss'
 
 class CurrentPlayer extends Component {
     constructor(props){

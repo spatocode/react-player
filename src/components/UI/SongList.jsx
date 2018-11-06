@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Song from './Song'
-import '../../stylesheets/PlayerList.scss'
 
 const  SongList = ({ songs=[], onRate=f=>f, onRemove=f=>f, getSong=f=>f }) =>
     <div className="song-list">
