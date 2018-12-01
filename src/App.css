@@ -122,6 +122,8 @@
   position: relative;
   bottom: 40px;
   cursor: pointer;
+  margin-right: 12px;
+  font-size: 20px;
 }
 .song-list{
   display:flex;
