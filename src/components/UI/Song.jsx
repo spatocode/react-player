@@ -5,7 +5,7 @@ import StarRating from './StarRating'
 const Song = ({ name, rating, onRate, onRemove, getSong=f=>f }) =>
     <section className="song" onClick={getSong}>
         <p>{name}</p>
-        <button className="remove-button" onClick={onRemove}>X</button>
+        <button className="remove-button" onClick={onRemove}><i className="fa fa-trash-o" title="Delete"></i></button>
         <div className="rating-wrapper">
             <StarRating starsSelected={rating} onRate={onRate} />
         </div>
