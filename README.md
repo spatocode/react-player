@@ -8,7 +8,7 @@ Audio player web application with react.
 ## Teck Stack
 
 * React
-
+* Redux
 
 ## Features
 
@@ -21,5 +21,5 @@ Audio player web application with react.
 
 ## Contributing to React player
 
-Feel free to contribute to this repo. Every contributions are greatly appreciated, and credit will always be given.
+Feel free to contribute to this repo. Every contributions are greatly appreciated.
 Check out [contributing guide](https://github.com/Spatocode/react-player/blob/master/CONTRIBUTING.md) to get an overview of how to contribute to this repo.
